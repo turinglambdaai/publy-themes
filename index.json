@@ -6,25 +6,29 @@
       "id": "claude",
       "kind": "article",
       "source": "builtin",
-      "description": "Warm oat Claude-style theme (default)"
+      "description": "Warm oat Claude-style theme (default)",
+      "preview": "previews/claude.png"
     },
     {
       "id": "naive",
       "kind": "card",
       "source": "builtin",
-      "description": "Clean white ink card theme (default)"
+      "description": "Clean white ink card theme (default)",
+      "preview": "previews/card-naive.png"
     },
     {
       "id": "claude",
       "kind": "card",
       "source": "builtin",
-      "description": "Warm oat card theme matching the claude article theme"
+      "description": "Warm oat card theme matching the claude article theme",
+      "preview": "previews/card-claude.png"
     },
     {
       "id": "medium",
       "kind": "article",
       "source": "builtin",
-      "description": "Medium-style clean blog typesetting"
+      "description": "Medium-style clean blog typesetting",
+      "preview": "previews/medium.png"
     }
   ]
 }
