@@ -84,9 +84,7 @@ const reg = {
   ]
 }
 ;
-{
-void reg;
-    for (const t of reg.themes) {
+for (const t of reg.themes) {
         const el = document.createElement('div');
         el.className = 'card' + (t.kind === 'card' ? ' card-kind' : '');
         el.innerHTML = `<img src="${t.preview}" alt="${t.id}">
@@ -94,7 +92,6 @@ void reg;
             <p class="card-desc">${t.description || ''}</p></div>`;
         document.getElementById(t.kind === 'card' ? 'card-grid' : 'article-grid').appendChild(el);
     }
-});
 </script>
 </body>
 </html>
