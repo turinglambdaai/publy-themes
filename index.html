@@ -49,7 +49,43 @@
     </footer>
 </div>
 <script>
-fetch('./index.json').then(r => r.json()).then(reg => {
+const reg = {
+  "version": 1,
+  "description": "Publy theme registry — curated list of article and card themes. Built-ins ship with @publy/core; external themes are npm packages installed with `publy theme add`.",
+  "themes": [
+    {
+      "id": "claude",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Warm oat Claude-style theme (default)",
+      "preview": "previews/claude.png"
+    },
+    {
+      "id": "naive",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Clean white ink card theme (default)",
+      "preview": "previews/card-naive.png"
+    },
+    {
+      "id": "claude",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Warm oat card theme matching the claude article theme",
+      "preview": "previews/card-claude.png"
+    },
+    {
+      "id": "medium",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Medium-style clean blog typesetting",
+      "preview": "previews/medium.png"
+    }
+  ]
+}
+;
+{
+void reg;
     for (const t of reg.themes) {
         const el = document.createElement('div');
         el.className = 'card' + (t.kind === 'card' ? ' card-kind' : '');
