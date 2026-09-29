@@ -2,8 +2,29 @@
   "version": 1,
   "description": "Publy theme registry — curated list of article and card themes. Built-ins ship with @publy/core; external themes are npm packages installed with `publy theme add`.",
   "themes": [
-    { "id": "claude", "kind": "article", "source": "builtin", "description": "Warm oat Claude-style theme (default)" },
-    { "id": "naive", "kind": "card", "source": "builtin", "description": "Clean white ink card theme (default)" },
-    { "id": "claude", "kind": "card", "source": "builtin", "description": "Warm oat card theme matching the claude article theme" }
+    {
+      "id": "claude",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Warm oat Claude-style theme (default)"
+    },
+    {
+      "id": "naive",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Clean white ink card theme (default)"
+    },
+    {
+      "id": "claude",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Warm oat card theme matching the claude article theme"
+    },
+    {
+      "id": "medium",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Medium-style clean blog typesetting"
+    }
   ]
 }
