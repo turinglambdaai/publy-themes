@@ -1,0 +1,44 @@
+<div id="publy" style="font-size: 16px; color: #c9d1d9; background-color: #0d1117; padding: 28px 18px 52px 18px; line-height: 1.75; font-family: 'SF Mono', 'Cascadia Code', Consolas, 'PingFang SC', 'Microsoft YaHei', monospace, sans-serif; word-wrap: break-word;"><h1 style="box-sizing: border-box; font-size: 1.3em; font-weight: 700; color: #e6edf3; line-height: 1.4; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 1px solid #30363d;">主题预览样例</h1>
+<p style="box-sizing: border-box; margin: 16px 0; line-height: 1.75; color: #c9d1d9;">这是一篇用于展示 Publy 主题排版效果的样例文章：标题层级、正文、强调、代码、表格与引用，一次看全。</p>
+<h2 style="box-sizing: border-box; font-size: 1.15em; font-weight: 700; color: #7ee787; line-height: 1.4; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #30363d;">排版要素</h2>
+<p style="box-sizing: border-box; margin: 16px 0; line-height: 1.75; color: #c9d1d9;">工程师写作离不开三类内容：<strong style="box-sizing: border-box; font-weight: 700; color: #7ee787;">结论先行</strong>的论断、<em style="box-sizing: border-box; font-style: italic; color: #a5b1bd;">克制的强调</em>、以及 <code style="box-sizing: border-box; font-family: 'SF Mono', Consolas, monospace; padding: 2px 6px; background-color: #161b22; color: #7ee787; border: 1px solid #30363d; border-radius: 4px; font-size: 0.85em; line-height: 1.5;">const answer = 42</code> 这样的行内代码。好的主题应当让三者各有其位，互不喧宾夺主。</p>
+<h3 style="box-sizing: border-box; font-size: 1em; font-weight: 700; color: #e6edf3; margin: 20px 0 8px;">代码块</h3>
+<pre style="box-sizing: border-box; margin: 22px 0; padding: 16px; background-color: #010409; border: 1px solid #30363d; border-radius: 8px; overflow-x: auto; font-size: 0.82em; line-height: 1.6;"><code class="language-ts" style="box-sizing: border-box; font-family: 'SF Mono', Consolas, monospace; line-height: 1.5; padding: 0; background-color: transparent; color: #c9d1d9; border: none; border-radius: 0; font-size: 1em;"><span class="hljs-comment" style="color: #8b949e; box-sizing: border-box;">// 主题应当优雅地呈现代码高亮</span>
+<span class="hljs-keyword" style="color: #ff7b72; box-sizing: border-box;">export</span> <span class="hljs-keyword" style="color: #ff7b72; box-sizing: border-box;">function</span> <span class="hljs-title function_" style="color: #d2a8ff; box-sizing: border-box;">publish</span>(<span class="hljs-params" style="box-sizing: border-box;"><span class="hljs-attr" style="color: #79c0ff; box-sizing: border-box;">markdown</span>: <span class="hljs-built_in" style="color: #ffa657; box-sizing: border-box;">string</span></span>): <span class="hljs-title class_" style="color: #d2a8ff; box-sizing: border-box;">Promise</span>&lt;<span class="hljs-built_in" style="color: #ffa657; box-sizing: border-box;">string</span>&gt; {
+  <span class="hljs-keyword" style="color: #ff7b72; box-sizing: border-box;">const</span> html = <span class="hljs-title function_" style="color: #d2a8ff; box-sizing: border-box;">render</span>(markdown, { <span class="hljs-attr" style="color: #79c0ff; box-sizing: border-box;">theme</span>: <span class="hljs-string" style="color: #a5d6ff; box-sizing: border-box;">"claude"</span> });
+  <span class="hljs-keyword" style="color: #ff7b72; box-sizing: border-box;">return</span> server.<span class="hljs-title function_" style="color: #d2a8ff; box-sizing: border-box;">post</span>(<span class="hljs-string" style="color: #a5d6ff; box-sizing: border-box;">"/v1/publish"</span>, { html });
+}
+</code></pre>
+<h3 style="box-sizing: border-box; font-size: 1em; font-weight: 700; color: #e6edf3; margin: 20px 0 8px;">表格</h3>
+<table style="box-sizing: border-box; width: 100%; margin: 20px 0; border-collapse: collapse; font-size: 0.88em;" width="100%">
+<thead style="box-sizing: border-box;">
+<tr style="box-sizing: border-box; border: none;">
+<th style="box-sizing: border-box; background-color: #161b22; padding: 10px 14px; text-align: left; font-weight: 600; color: #e6edf3; border: 1px solid #30363d;" bgcolor="#161b22" align="left">要素</th>
+<th style="box-sizing: border-box; background-color: #161b22; padding: 10px 14px; text-align: left; font-weight: 600; color: #e6edf3; border: 1px solid #30363d;" bgcolor="#161b22" align="left">弱主题的做法</th>
+<th style="box-sizing: border-box; background-color: #161b22; padding: 10px 14px; text-align: left; font-weight: 600; color: #e6edf3; border: 1px solid #30363d;" bgcolor="#161b22" align="left">好主题的做法</th>
+</tr>
+</thead>
+<tbody style="box-sizing: border-box;">
+<tr style="box-sizing: border-box; border: none;">
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">强调</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">一律加粗</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">语义分层</td>
+</tr>
+<tr style="box-sizing: border-box; border: none;">
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">代码</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">等宽即可</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">高亮 + 背景呼应</td>
+</tr>
+<tr style="box-sizing: border-box; border: none;">
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">链接</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">蓝色下划线</td>
+<td style="box-sizing: border-box; padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9;">转文末脚注</td>
+</tr>
+</tbody>
+</table>
+<blockquote style="box-sizing: border-box; margin: 20px 0; padding: 12px 16px; background-color: #161b22; border-left: 3px solid #7ee787; color: #8b949e; border-radius: 0 6px 6px 0;">
+<p style="box-sizing: border-box; margin: 16px 0; line-height: 1.75; color: #c9d1d9;">引用块用来承接过渡与旁注。引用的样式透露一个主题的性格：克制的主题只用一条竖线，热情的主题会铺满底色。</p>
+</blockquote>
+<h2 style="box-sizing: border-box; font-size: 1.15em; font-weight: 700; color: #7ee787; line-height: 1.4; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #30363d;">链接与脚注</h2>
+<p style="box-sizing: border-box; margin: 16px 0; line-height: 1.75; color: #c9d1d9;">参考资料见 微信官方文档<sup style="box-sizing: border-box;">[1]</sup> 与 Publy 设计文档<sup style="box-sizing: border-box;">[2]</sup>。链接会被转换为文末脚注，正文保持干净——这是对移动端读者最基本的尊重。</p>
+<div class="publy-footnotes" style="box-sizing: border-box; margin-top: 30px; padding-top: 14px; border-top: 1px solid #21262d; font-size: 0.85em; color: #8b949e;"><p style="box-sizing: border-box; line-height: 1.75; color: #c9d1d9; margin: 6px 0;"><strong style="box-sizing: border-box; font-weight: 700; color: #7ee787;">引用链接</strong></p><p style="box-sizing: border-box; line-height: 1.75; color: #c9d1d9; margin: 6px 0;"><sup style="box-sizing: border-box; color: #7ee787; font-weight: 600;">[1]</sup> 微信官方文档：https://developers.weixin.qq.com/</p><p style="box-sizing: border-box; line-height: 1.75; color: #c9d1d9; margin: 6px 0;"><sup style="box-sizing: border-box; color: #7ee787; font-weight: 600;">[2]</sup> Publy 设计文档：https://github.com/turinglambdaai/publy</p></div></div>

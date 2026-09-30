@@ -6,29 +6,85 @@
       "id": "claude",
       "kind": "article",
       "source": "builtin",
-      "description": "Warm oat Claude-style theme (default)",
-      "preview": "previews/claude.png"
-    },
-    {
-      "id": "naive",
-      "kind": "card",
-      "source": "builtin",
-      "description": "Clean white ink card theme (default)",
-      "preview": "previews/card-naive.png"
-    },
-    {
-      "id": "claude",
-      "kind": "card",
-      "source": "builtin",
-      "description": "Warm oat card theme matching the claude article theme",
-      "preview": "previews/card-claude.png"
+      "description": "Warm oat Claude-style theme (default)"
     },
     {
       "id": "medium",
       "kind": "article",
       "source": "builtin",
-      "description": "Medium-style clean blog typesetting",
-      "preview": "previews/medium.png"
+      "description": "Medium-style clean blog typesetting"
+    },
+    {
+      "id": "wechat",
+      "kind": "article",
+      "source": "builtin",
+      "description": "WeChat-native look: white, grey-black text, WeChat link blue"
+    },
+    {
+      "id": "ink",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Minimal black & white with generous whitespace"
+    },
+    {
+      "id": "tech",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Tech blue: accent bars, light-blue code blocks (juejin style)"
+    },
+    {
+      "id": "rose",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Soft pink for lifestyle / beauty accounts"
+    },
+    {
+      "id": "official",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Formal red for institutional / corporate announcements"
+    },
+    {
+      "id": "fortune",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Finance navy & gold for business / investing accounts"
+    },
+    {
+      "id": "terminal",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Dark geek terminal (pair with github-dark highlight)"
+    },
+    {
+      "id": "news",
+      "kind": "article",
+      "source": "builtin",
+      "description": "Compact news style with black title bars"
+    },
+    {
+      "id": "naive",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Clean white ink card theme (default)"
+    },
+    {
+      "id": "claude",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Warm oat card theme matching the claude article theme"
+    },
+    {
+      "id": "wechat",
+      "kind": "card",
+      "source": "builtin",
+      "description": "WeChat-green card theme"
+    },
+    {
+      "id": "midnight",
+      "kind": "card",
+      "source": "builtin",
+      "description": "Dark midnight card theme with terminal-green accent"
     }
   ]
 }
