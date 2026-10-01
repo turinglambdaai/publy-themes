@@ -1,6 +1,6 @@
 # Publy Theme Registry
 
-Curated index of Publy themes (article themes for Markdown → WeChat HTML, card themes for xiaolvshu 3:4 PNG decks). `publy theme ls` reads `index.json` from this repo.
+Curated index of Publy themes (article themes for Markdown → WeChat HTML, card themes for image-post 3:4 PNG decks). `publy theme ls` reads `index.json` from this repo.
 
 ## Format
 
